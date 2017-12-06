@@ -1,13 +1,13 @@
-package com.nrenaud.katas;
+package com.nrenaud.katas.string;
 
-import com.nrenaud.kata.string.Permutation;
+import com.nrenaud.katas.string.exercise.PermutationExercise;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 class TestPermutation {
 
-    private final Permutation permutation = new Permutation();
+    private final Permutation permutation = new PermutationExercise();
 
     @Test
     void testPalindromeEmpty(){

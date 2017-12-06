@@ -1,12 +1,13 @@
-package com.nrenaud.katas;
+package com.nrenaud.katas.string;
 
-import com.nrenaud.kata.string.Palindrome;
+import com.nrenaud.katas.string.exercise.PalindromeExercise;
 import org.junit.jupiter.api.Test;
-import static org.assertj.core.api.Assertions.*;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 class TestPalindrome {
 
-    private final Palindrome palindrome = new Palindrome();
+    private final Palindrome palindrome = new PalindromeExercise();
 
     @Test
     void testPalindromeOkClassic(){
