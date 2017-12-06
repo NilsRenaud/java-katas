@@ -1,16 +1,16 @@
 package com.nrenaud.katas.string;
 
-import com.nrenaud.katas.string.exercise.PalindromeExercise;
+import com.nrenaud.katas.string.solution.PalindromeSolution;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 class TestPalindrome {
 
-    private final Palindrome palindrome = new PalindromeExercise();
+    private final Palindrome palindrome = new PalindromeSolution();
 
     @Test
-    void testPalindromeOkClassic(){
+    void testPalindromeOkClassic() {
         assertThat(palindrome.isPalindrome("a")).isTrue();
         assertThat(palindrome.isPalindrome("aaaaaaaaaaaaaaa")).isTrue();
         assertThat(palindrome.isPalindrome("treert")).isTrue();
@@ -19,18 +19,18 @@ class TestPalindrome {
     }
 
     @Test
-    void testPalindromeOkCase(){
+    void testPalindromeOkCase() {
         assertThat(palindrome.isPalindrome("AaBbAA")).isTrue();
     }
 
     @Test
-    void testPalindromeOkSpecialChar(){
+    void testPalindromeOkSpecialChar() {
         assertThat(palindrome.isPalindrome("ééÈéé")).isTrue();
         assertThat(palindrome.isPalindrome("èÈ")).isTrue();
     }
 
     @Test
-    void testPalindromeOkBlankSpaces(){
+    void testPalindromeOkBlankSpaces() {
 
         assertThat(palindrome.isPalindrome("  a b ba      ")).isTrue();
         assertThat(palindrome.isPalindrome("a b ba")).isTrue();
@@ -38,7 +38,7 @@ class TestPalindrome {
     }
 
     @Test
-    void testPalindromeKo(){
+    void testPalindromeKo() {
         assertThat(palindrome.isPalindrome("")).isFalse();
         assertThat(palindrome.isPalindrome(null)).isFalse();
         assertThat(palindrome.isPalindrome("ab")).isFalse();

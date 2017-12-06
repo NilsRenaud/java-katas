@@ -1,6 +1,6 @@
 package com.nrenaud.katas.array;
 
-import com.nrenaud.katas.array.exercise.MissingItemExercise;
+import com.nrenaud.katas.array.solution.MissingItemSolution;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -11,7 +11,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class TestMissingItem {
 
-    private final MissingItem missingItem = new MissingItemExercise();
+    private final MissingItem missingItem = new MissingItemSolution();
 
     @Test
     void testOneMissingItemNominal() {
